@@ -1,2 +1,2 @@
 # juggle_js
-js training.
+My reflections on the JS. A simple script for each day.
