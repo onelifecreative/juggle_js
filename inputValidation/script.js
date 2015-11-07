@@ -18,7 +18,6 @@
 			_init : function(e){
 					e.target.onblur = this._isNotEmpty;		
 			},
-
 			_isNotEmpty: function(e){
 				var el = e.target;
 				
@@ -33,7 +32,4 @@
 		};
 		
 	}();
-
-	window.valid = obj;
-
 }(window, document));
