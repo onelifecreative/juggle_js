@@ -93,7 +93,6 @@
  *
  */
 
-
  		/* getElementsByTagName('@tagName'); return collection all <li> item */	
 			
 			document.getElementsByTagName('li');
