@@ -34,6 +34,9 @@
 
 		document.getElementById('main_app').getElementsByTagName('section');
 
+	/* get specific element collection with class - not supported by older browser , IE9 in down */
+
+		document.getElementByClassName('article');
 
 	/* querySelector('@selector'); return first element of DOM with this selector */
 
@@ -44,6 +47,26 @@
 		document.querySelectorAll('.list-item li');
 
 
+
+/*
+ * Class List || @param className === string
+ */
+
+ 	// Add Class
+ 	element.classList.add(className);
+
+ 	// Remove Class
+ 	element.classList.remove(ClassName);
+
+ 	// Has Class
+ 	element.classList.contains(className);
+
+ 	// toogle Class
+ 	element.classList.toggle(className);
+
+/*
+ * Class List || @param className === string
+ */
 
 
 
@@ -178,6 +201,26 @@
 
 
 /*
+ * Attributes || NodeType || NodeName
+ */
+
+ 	var element = document.querySelector('image');
+
+ 	element.NodeType // return 1 | what is this type ? // https://developer.mozilla.org/pl/docs/Web/API/Element/nodeType
+ 	
+
+ 	element.NodeName   // return name of attritute 'IMG'
+
+
+ 	element.attributes // ?
+
+
+ 	// browser return NamedNodeMap {0: width, 1: height, 2: alt, 3: src}
+ 	
+ 	element.attributes[1];  // returned height
+
+
+/*
  * Insert & Remove ElementNode || link to MDN https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
  */
 
@@ -204,22 +247,18 @@
 	element.parentNode.removeChild(el);
 
 /*
- * Class List || @param className === string
+ * replaceElement with DOM
  */
 
- 	// Add Class
- 	element.classList.add(className);
+ 	// replaces one child node of the specified element with another
+ 	// https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild
+ 	
 
- 	// Remove Class
- 	element.classList.remove(ClassName);
+ 	var nodeOne = document.querySelector('.actirle-one');
+ 	var replecedNode = document.getElementById('listItem');
 
- 	// Has Class
- 	element.classList.contains(className);
-
- 	// toogle Class
- 	element.classList.toggle(className);
-
-
+ 	// getReplacedNode 'parentNode' use method [replaceChild] (getReplacedNode, nodeOne) 
+ 	replecedNode.parentNode.replaceChild(replecedNode, nodeOne);
 
 
 
