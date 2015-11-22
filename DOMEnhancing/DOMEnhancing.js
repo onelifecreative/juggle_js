@@ -147,7 +147,7 @@
 
 
 /*
- * Create & Clone & Insert Text - Node Elemenet
+ * Create & Clone & - Node Elemenet
  */
 
  	// Create
@@ -162,12 +162,6 @@
  	// @cloneNode  Clone node of all children
  	var node = '<h2><h2>';
  	var newNode = node.cloneNode(true);
-
- 	// insert text
- 	element.innerHTML = string;
-
- 	// return text content of node
- 	element.innerText
 
 
 /*
@@ -223,6 +217,11 @@
 /*
  * Insert & Remove ElementNode || link to MDN https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
  */
+ 	// return element inside tags
+ 	element.innerHTML;
+ 	
+ 	// return element with tag elements
+ 	element.outerHTML;
 
  	// Before
  	element.parentNode.insertBefore(newElement, element);
@@ -261,6 +260,14 @@
  	replecedNode.parentNode.replaceChild(replecedNode, nodeOne);
 
 
+/*
+ * node.innerText || node.textContent
+ */
+
+
+ 	node.innerText // get text by element node
+
+ 	node.textContent // suported with Firefox
 
 
 
