@@ -9,8 +9,6 @@
  *
  */
 
-
-
 /*
  * Find Element of the DOM
  * 
@@ -20,7 +18,6 @@
  * @ querySelectorAll
  *
  */
-
 
 	/* getElementsByTagName('@tagName'); return collection all <li> item */	
 	
@@ -142,8 +139,6 @@
 
 	var body = document.getElementsByTagName('body');
 			body[0].innerHTML = view(obj);
-
-
 
 
 /*
